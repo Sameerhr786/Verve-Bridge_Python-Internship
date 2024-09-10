@@ -1,0 +1,37 @@
+Web Scraping Flipkart Product Data
+This project is designed as a web scraping tool to extract product information from Flipkart based on a specified search query. It gathers details such as product URLs, names, prices, ratings, and the number of reviews from multiple search result pages.
+
+Technologies Used
+Python
+BeautifulSoup
+Requests
+Selenium
+Pandas
+Features
+Scrapes product data from Flipkart's search results.
+Extracts comprehensive product information, including URLs, names, prices, ratings, review counts, descriptions, FSN, Product Description, and Manufacturer details.
+Supports the scraping of multiple pages of product listings.
+Utilizes Selenium to manage dynamic content, including "Read More" buttons and other hidden elements.
+Provides a foundational framework for further data extraction from individual product detail pages.
+Exports the scraped data into a CSV file for easy analysis.
+Updates the CSV file with additional details retrieved from each product URL.
+Prerequisites
+Before running the application, ensure that you have the following installed on your system:
+
+Python (version 3.x recommended)
+Required Python libraries:
+
+pip install requests beautifulsoup4 selenium pandas
+Installation
+Clone the repository:
+
+git clone https://github.com/Sunil-nith/Web_Scraping_Flipkart_Product_Data.git
+Navigate to the project directory.
+Install the required Python libraries.
+First, run web_scraping_1.py, followed by web_scraping_2.py.
+Usage
+Open the web_scraping_1.py file.
+Update the url variable with your desired search query (e.g., bags).
+Modify the Pages_to_scrape variable to set the number of pages you wish to scrape (e.g., 20).
+Execute the web_scraping_1.py script using Python. This will scrape product data from the specified number of pages and save the basic product information (name, price, URL) to a CSV file named Products_1.csv.
+Next, open the web_scraping_2.py file and run the script. This will read the basic product data from Products_1.csv, visit each product URL, extract additional details (e.g., description, FSN, manufacturer), and update the CSV file with this information, saving it as Products_2.csv.
